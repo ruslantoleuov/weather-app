@@ -247,6 +247,9 @@ const getWeatherData = async function (location) {
 
     convertTempDegrees(oneCallC, CELSIUS);
 
+    fahrenheitButton.classList.remove("choosed");
+    celsiusButton.classList.add("choosed");
+
     celsiusButton.addEventListener("click", function (e) {
       if (e.target) {
         fahrenheitButton.classList.remove("choosed");
